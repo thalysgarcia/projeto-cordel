@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC:wght@100..400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --font1:Verdana, Geneva, Tahoma, sans-serif;
+    --font2: "Playwrite AU VIC", cursive;
+    --font3: "Roboto Condensed", sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body {
+    min-height: 100%;
+    background-color: darkgrey;
+    font-family: var(--font1);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: var(--font2);
+}
+
+header > h1 {
+    padding-top: 50px;
+    /* Joga todas as letras para maisculas ---> text-transform: uppercase; */
+    /* Interessante como fica as letras  */
+    font-variant: small-caps; 
+    font-size: 5vw;
+}
+
+header a, footer a {
+    color:white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section { /*Desse jeito quando diminiu ele ja se adequa*/
+    padding-left: 30px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    font-family: var(--font3);
+    font-size: 4.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+
+section.imagem {
+    background-color: rgb(27, 25, 25);
+    color:white;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.586);
+    background-size: cover;
+    /* O que faz a imagem ficar fixa */
+    background-attachment:fixed;
+}
+
+section.imagem > p {
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.405);
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+    
+}
+
+section#img01 {
+    background-image:url(../desafio012/imagens/background001.jpg);
+    background-position: right center ;
+    
+}
+
+section#img02 {
+    background-image: url(../desafio012/imagens/background002.jpg);
+    
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
